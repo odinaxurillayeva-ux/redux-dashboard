@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #f7f8fc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: white;
+  border-right: 1px solid #ececec;
+  padding: 25px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: #20c05c;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.menuTitle {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px;
+  border-radius: 14px;
+
+  color: #555;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #edf8f2;
+  color: #20c05c;
+}
+
+.menu a.active {
+  background: #20c05c;
+  color: white;
+}
+
+.shopCard {
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #f4fff8;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.shopCard img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.shopCard h4 {
+  font-size: 14px;
+}
+
+.shopCard p {
+  color: gray;
+  font-size: 12px;
+}
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+
+
+.card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 125px;
+  position: relative;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top h3 {
+  font-size: 13px;
+  margin: 0;
+  color: #333;
+}
+
+.top svg {
+  color: #777;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info strong {
+  font-size: 20px;
+  color: #183b43;
+}
+
+.info span {
+  font-size: 10px;
+}
+.subtitle {
+  font-size: 10px;
+  color: #999;
+  margin: 6px 0 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  strong {
+    font-size: 20px;
+    color: #183b43;
+  }
+
+  span {
+    font-size: 10px;
+  }
+}
+
+.green {
+  color: #35b77b;
+}
+
+.red {
+  color: #ff5b61;
+}
+
+.previous {
+  font-size: 9px;
+  color: #999;
+  margin: 4px 0;
+}
+
+.card button {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+
+  border: 1px solid #8b8cff;
+  background: transparent;
+  color: #777cff;
+  border-radius: 15px;
+  padding: 4px 14px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
+/* ===== LAYOUT ===== */
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f7f8fc;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
